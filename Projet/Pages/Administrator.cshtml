@@ -1,0 +1,31 @@
+﻿@page
+@model Projet.Pages.AdministratorModel
+@{
+}
+<div class="row">
+
+
+    <table class="col table table-striped">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        @foreach (var item in Model.Liste)
+        {
+            <tr>
+                <td>@item.Username</td>
+                <td>@item.Password</td>
+                <td>
+                    @* <a class="btn btn-primary" href="/Edit?id=@item.Username">Edit</a> *@
+                    <a class="btn btn-primary" asp-page="/Edit" asp-route-id="@item.Username">Edit</a>
+                    <a class="btn btn-danger" asp-page="/Delete" asp-route-id="@item.Username">Delete</a>
+                    <a class="btn btn-success" asp-page="/Details" asp-route-id="@item.Username">Details</a>
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>

@@ -1,0 +1,19 @@
+﻿@page
+@model Projet.Pages.DeleteModel
+@{
+}
+<form method="post" class="col-4">
+    <h3>Account</h3>
+    <h2>Are you sur to delete the account?</h2>
+    <div>
+        <label>Username</label>
+        <input asp-for="Compte.Username" class="form-control" />
+    </div>
+    <div>
+        <label>Password</label>
+        <input asp-for="Compte.Password" class="form-control" />
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary">Delete</button>
+    </div>
+</form>
