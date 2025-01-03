@@ -26,7 +26,7 @@ Le projet **Gestion des Ressources Matérielles** vise à développer une applic
    - Signalement des pannes par les enseignants.  
    - Diagnostic des pannes et gestion des réparations ou remplacements.
 
-4. **Sécurité ** :  
+4. **Sécurité** :  
    - Gestion des accès pour tous les utilisateurs.  
    - Gestion des fournisseurs.
 
